@@ -1,3 +1,5 @@
+package model;
+
 import java.io.Serializable;
 
 
@@ -81,7 +83,7 @@ public class Contacts implements Serializable {
 
     @Override
     public String toString() {
-        return "Contacts{" +
+        return "model.Contacts{" +
                 "phoneNumber='" + phoneNumber + '\'' +
                 ", group='" + group + '\'' +
                 ", name='" + name + '\'' +

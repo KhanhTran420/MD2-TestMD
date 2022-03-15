@@ -1,5 +1,7 @@
 package storage;
 
+import model.Contacts;
+
 import java.io.*;
 import java.util.ArrayList;
 

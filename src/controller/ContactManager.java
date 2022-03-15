@@ -1,5 +1,6 @@
 package controller;
 
+import model.Contacts;
 import storage.ContactFromFileBinary;
 import storage.IEcontactData;
 
@@ -53,7 +54,7 @@ public class ContactManager {
 
     public static void findContact() {
         Scanner scanner = new Scanner(System.in);
-        System.out.println("nhập tên Tài xế bạn muốn tìm: ");
+        System.out.println("nhập tên bạn muốn tìm: ");
         String namePhone = scanner.nextLine();
         boolean check = false;
         for (int i = 0; i < contactList.size(); i++) {

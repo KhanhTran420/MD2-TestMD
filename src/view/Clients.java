@@ -1,5 +1,8 @@
 package view;
 
+import controller.ContactManager;
+import model.Contacts;
+
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -32,11 +35,13 @@ public class Clients {
                     break;
                 case 3:
                      editContact();
+                     break;
                 case 4:
                     deleteContact();
                     break;
                 case 5:
                      ContactManager.findContact();
+                     break;
                 case 0:
                     System.exit(0);
                 default:
@@ -114,8 +119,9 @@ public class Clients {
     public static void editContact() {
         Scanner input = new Scanner(System.in);
         int choice = -1;
-        System.out.println("1. Sửa thông tin xe theo id: ");
+        System.out.println(" Sửa thông tin theo tên: ");
 
+        System.out.println("Nhập lựa chọn: ");
         choice = input.nextInt();
         if (choice == 1) {
             editContactByName();
