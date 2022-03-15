@@ -62,7 +62,7 @@ public class Clients {
         int choice = -1;
         Contacts newContact = null;
         System.out.println("1. Thêm mới danh bạ");
-        System.out.println("Nhập lựa chọn: ");
+        System.out.println("Nhập 1: ");
         choice = input.nextInt();
         if (choice == 1) {
             newContact = creatContacts();
@@ -108,7 +108,7 @@ public class Clients {
         int choice = -1;
         System.out.println("1. Xóa thông tin theo tên: ");
 
-        System.out.println("Nhập lựa chọn: ");
+        System.out.println("Nhập 1: ");
         choice = input.nextInt();
         if (choice == 1) {
             deleteContactByName();
@@ -121,7 +121,7 @@ public class Clients {
         int choice = -1;
         System.out.println(" Sửa thông tin theo tên: ");
 
-        System.out.println("Nhập lựa chọn: ");
+        System.out.println("Nhập 1: ");
         choice = input.nextInt();
         if (choice == 1) {
             editContactByName();
